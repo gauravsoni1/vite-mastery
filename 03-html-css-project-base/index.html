@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>Netflix and Chill</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="top-container d-flex flex-column">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="./assets/netflix-logo.png"
+                            alt="Bootstrap"
+                            height="50"
+                        />
+                    </a>
+                    <div class="d-flex">
+                        <button
+                            class="btn btn-danger"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#signin-modal"
+                        >
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-5">
+                <div class="d-flex flex-column text-light align-items-center">
+                    <span class="fs-1 fw-bolder"
+                        >Unlimited Movies, TV Shows, and more</span
+                    >
+                    <span class="fs-5">Watch anywhere. Cancel anytime</span>
+                    <span class="fs-5"
+                        >Ready to watch ? Enter your email to create or restart
+                        membership.</span
+                    >
+                </div>
+
+                <div
+                    class="d-flex justify-content-center email-input-container"
+                >
+                    <input
+                        type="text"
+                        class="flex-grow-0"
+                        placeholder="Enter email ..."
+                    />
+                    <button class="btn-lg btn btn-danger">Get Started ></button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="container-fluid d-flex bg-dark bg-gradient feature-container align-items-center"
+        >
+            <div
+                class="text-content d-flex flex-column text-light align-items-center justify-content-center flex-grow-1"
+            >
+                <span class="fs-3 fw-bolder">Enjoy on your TV</span>
+                <span class="fs-5">Watch on Smart TVs, Playstation,</span>
+                <span>
+                    Xbox, Chromecast, Apple TV, Blu-ray players, and more.</span
+                >
+            </div>
+            <img src="./assets/netflix-tv.jpeg" height="300" />
+        </div>
+        <hr class="divider-row" />
+        <div
+            class="container-fluid d-flex bg-dark bg-gradient feature-container align-items-center"
+        >
+            <img src="./assets/movie-background.jpg" height="300" />
+            <div
+                class="text-content d-flex flex-column text-light align-items-center justify-content-center flex-grow-1"
+            >
+                <span class="fs-3 fw-bolder">Download and watch offline</span>
+                <span class="fs-5">Save your favourite shows</span>
+                <span> and always have something to watch.</span>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="signin-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign In</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <input
+                            id="username-txt"
+                            type="text"
+                            class="inputbox-dark"
+                            placeholder="Email or phone number"
+                        />
+                        <input
+                            id="password-txt"
+                            type="text"
+                            class="inputbox-dark"
+                            placeholder="Password"
+                        />
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            id="signin-btn"
+                            type="button"
+                            class="btn btn-danger"
+                        >
+                            Sign in
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+    ></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+    "></script>
+
+    <script type="module" src="./index.js"></script>
+</html>

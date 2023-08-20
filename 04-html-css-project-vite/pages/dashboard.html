@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/dashboard.css" />
+        <title>Netflix and Chill</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="dashboard-container d-flex flex-column">
+            <nav class="navbar">
+                <div class="container-fluid dashboard-navbar">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="../assets//netflix-logo.png"
+                            alt="Bootstrap"
+                            height="50"
+                        />
+                    </a>
+                    <div class="header-menu">
+                        <a>Home</a>
+                        <a>My List</a>
+                        <a>Movies</a>
+                        <a>New & Popular</a>
+                    </div>
+                    <div class="d-flex">
+                        <button
+                            id="signout"
+                            class="btn btn-danger"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#signin-modal"
+                        >
+                            Sign Out
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-5">
+                <div class="category-container">
+                    <span class="category-title fs-3 text-light">Action</span>
+                    <div
+                        id="action-movies-container"
+                        class="scroll-container d-flex w-100 mt-3"
+                    ></div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <div class="category-container">
+                    <span class="category-title fs-3 text-light">Animated</span>
+                    <div
+                        id="animated-movies-container"
+                        class="scroll-container d-flex w-100 mt-3"
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+    ></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+    "></script>
+
+    <script type="module" src="./dashboard.js"></script>
+</html>
