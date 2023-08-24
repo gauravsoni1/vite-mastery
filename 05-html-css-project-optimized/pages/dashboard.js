@@ -1,6 +1,12 @@
+import "../css/dashboard.css";
+import "../css/styles.css";
+import movieDb from '../assets/movieDb.json';
+
 const actionMoviesContainer = document.getElementById("action-movies-container");
 const animatedMoviesContainer = document.getElementById("animated-movies-container");
 const signoutBtn = document.getElementById("signout");
+
+console.log(movieDb);
 
 const actionMoviesList = [
     { img: "avengers.jpg", name: "Avengers" },
@@ -21,7 +27,7 @@ const animatedMoviesList = [
     { img: "the-incredibles.jpeg", name: "The Incredibles" },
 ];
 
-signoutBtn.addEventListener("click", function(){
+signoutBtn.addEventListener("click", function () {
     window.location.replace('/');
 })
 
@@ -32,8 +38,7 @@ function renderTitles(movieList, containerElement) {
         const movieTitle = document.createElement("p");
 
         div.classList.add("d-flex", "flex-column");
-        // img.src = `../assets/${movie.img}`;
-        img.src = new URL(`../assets/${movie.img}`, import.meta.url).href;
+        img.src = `../assets/${movie.img}`;
         movieTitle.innerText = movie.name;
         movieTitle.classList.add(
             "align-self-center",
@@ -51,4 +56,4 @@ function renderTitles(movieList, containerElement) {
 }
 
 renderTitles(actionMoviesList, actionMoviesContainer);
-renderTitles(animatedMoviesList, animatedMoviesContainer);
+renderTitles(animatedMoviesList, animatedMoviesContainer, true);
