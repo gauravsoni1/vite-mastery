@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.66.1",
     "vite": "^4.4.9"
   },
   "dependencies": {

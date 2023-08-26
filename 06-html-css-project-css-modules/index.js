@@ -1,4 +1,4 @@
-import "./css/styles.css";
+import "./css/styles.scss";
 import 'bootstrap';
 
 const signinBtn = document.getElementById("signin-btn");
