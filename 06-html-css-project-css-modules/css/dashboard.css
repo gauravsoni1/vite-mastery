@@ -1,0 +1,39 @@
+.dashboard-container {
+    padding: 20px;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.dashboard-navbar {
+    display: flex;
+}
+
+.navbar .header-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar .header-menu a {
+    margin-right: 20px;
+    color: white !important;
+}
+
+.navbar .header-menu a:hover {
+    color: lightgray !important;
+    cursor: pointer;
+}
+
+.scroll-container {
+    overflow-x: auto;
+}
+
+.scroll-container > div {
+    margin-right: 50px;
+}
+
+.category-container img {
+    width: 150px;
+    height: 230px;
+    border: 1px solid white;
+}
