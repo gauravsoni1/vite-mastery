@@ -8,7 +8,7 @@ let title = "Some title";
 
 const App = () => {
     return (
-        <div className="underline"> Hello World 
+        <div className="underline"> Hello Worlds
             <Button></Button>
             <img alt="logo" className="w-20" src={ViteLogo}></img>
             <AppleLogo></AppleLogo>

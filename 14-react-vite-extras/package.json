@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "dead"
+  ],
   "scripts": {
-    "build": "vite build",
+    "build": "vite build --base=/electronicsTrading --minify=false",
     "preview": "vite preview",
     "dev": "vite"
   },
